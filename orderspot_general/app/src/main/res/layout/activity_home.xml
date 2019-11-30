@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+
+    <TextView
+        android:id="@+id/recieveid1"
+        android:layout_width="113dp"
+        android:layout_height="41dp"
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:text="ID"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/userp"
+        app:layout_constraintEnd_toStartOf="@+id/logout1"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/logout1"
+        android:layout_width="95dp"
+        android:layout_height="41dp"
+        android:text="logout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/userh"
+        android:layout_width="250dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="76dp"
+        android:background="@drawable/d3"
+        android:gravity="center"
+        android:text="지출 내역 검색"
+        android:textColor="#2196F3"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/recommandbtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/userp"
+        android:layout_width="250dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/d2"
+        android:gravity="center"
+        android:text="사용자 편향분석"
+        android:textColor="#FF9800"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/userh"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/recommandbtn"
+        android:layout_width="250dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="180dp"
+        android:background="@drawable/d1"
+        android:gravity="center"
+        android:text="메뉴 추천"
+        android:textColor="#E91E63"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tagDesc"
+        android:layout_width="215dp"
+        android:layout_height="70dp"
+        android:text=".."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        app:layout_constraintEnd_toStartOf="@+id/recieveid1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mobilekiosk" />
+</androidx.constraintlayout.widget.ConstraintLayout>
